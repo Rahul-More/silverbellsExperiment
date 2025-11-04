@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth transitions for theme and hover effects */
+* {
+  @apply transition-colors duration-150;
+}
+
+.container-page {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.card {
+  @apply rounded-xl border border-slate-200 bg-white shadow-sm hover:shadow-md;
+}
+
+.btn {
+  @apply inline-flex items-center gap-2 rounded-lg bg-brand px-4 py-2 text-white hover:bg-brand-dark active:scale-[0.99];
+}
+
+.btn-outline {
+  @apply inline-flex items-center gap-2 rounded-lg border border-brand text-brand px-4 py-2 hover:bg-brand hover:text-white;
+}
+
+.badge {
+  @apply inline-flex items-center rounded-full bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-700;
+}
