@@ -17,7 +17,6 @@ const NotFound = lazy(() => import('./pages/NotFound'))
 import App from './App'
 import { NAV_LINKS } from './site.config'
 
-// Hash router avoids 404s on GitHub Pages refresh/deep links
 export const router = createHashRouter([
   {
     path: '/',
@@ -25,9 +24,7 @@ export const router = createHashRouter([
     children: [
       { index: true, element: <Home /> },
       ...NAV_LINKS.filter(l => !l.external).map(l => ({
-        // Strip the leading forward slash for child routes
-        path: l.path.replace(/^
-on{1}}/g, ''),
+        path: l.path.replace(/^\//, ''),
         element:
           l.key === 'about' ? <About /> :
           l.key === 'academics' ? <Academics /> :
