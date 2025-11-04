@@ -1,5 +1,5 @@
 import { lazy } from 'react'
-import { createBrowserRouter, Navigate } from 'react-router-dom'
+import { createHashRouter, Navigate } from 'react-router-dom'
 
 const Home = lazy(() => import('./pages/Home'))
 const About = lazy(() => import('./pages/About'))
@@ -17,14 +17,17 @@ const NotFound = lazy(() => import('./pages/NotFound'))
 import App from './App'
 import { NAV_LINKS } from './site.config'
 
-export const router = createBrowserRouter([
+// Hash router avoids 404s on GitHub Pages refresh/deep links
+export const router = createHashRouter([
   {
     path: '/',
     element: <App />, 
     children: [
       { index: true, element: <Home /> },
       ...NAV_LINKS.filter(l => !l.external).map(l => ({
-        path: l.path.replace(/^\\/, ''),
+        // Strip the leading forward slash for child routes
+        path: l.path.replace(/^
+on{1}}/g, ''),
         element:
           l.key === 'about' ? <About /> :
           l.key === 'academics' ? <Academics /> :
