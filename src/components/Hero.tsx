@@ -1,9 +1,11 @@
 import { SITE } from '../site.config'
 import { useEffect, useState } from 'react'
+import texts from '../i18n'
 
 export default function Hero() {
   const [index, setIndex] = useState(0)
   const images = SITE.heroImages
+  const t = texts.home
 
   useEffect(() => {
     const id = setInterval(() => {
@@ -34,8 +36,8 @@ export default function Hero() {
               {SITE.tagline}
             </p>
             <div className="mt-6 flex gap-3">
-              <a href="/admissions" className="btn">Admissions</a>
-              <a href="/about" className="btn-outline">Learn More</a>
+              <a href="/admissions" className="btn">{t.heroAdmissionsButton}</a>
+              <a href="/about" className="btn-outline">{t.heroLearnMoreButton}</a>
             </div>
           </div>
         </div>

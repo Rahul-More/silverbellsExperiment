@@ -1,23 +1,21 @@
 import Section from '../components/Section'
+import texts from '../i18n'
 
 export default function Admissions() {
+  const t = texts.admissions
+
   return (
     <> 
-      <Section title="Admissions" subtitle="We’re excited to welcome new learners.">
+      <Section title={t.title} subtitle={t.subtitle}>
         <ol className="list-decimal pl-5 text-sm text-slate-700 grid gap-2">
-          <li>Submit an online enquiry</li>
-          <li>Visit campus and interaction (as applicable)</li>
-          <li>Confirm seat and complete documentation</li>
+          {t.steps.map(step => <li key={step}>{step}</li>)}
         </ol>
-        <a className="btn mt-6" href="mailto:info@silverbellsschool.org?subject=Admission Enquiry">Enquire via Email</a>
+        <a className="btn mt-6" href={t.enquireEmailHref}>{t.enquireEmailCtaLabel}</a>
       </Section>
 
-      <Section title="Documents Required">
+      <Section title={t.documentsRequiredTitle}>
         <ul className="list-disc pl-5 text-sm text-slate-700 grid gap-1">
-          <li>Birth certificate</li>
-          <li>Previous school reports</li>
-          <li>Passport-size photographs</li>
-          <li>Address proof</li>
+          {t.documents.map(doc => <li key={doc}>{doc}</li>)}
         </ul>
       </Section>
     </>

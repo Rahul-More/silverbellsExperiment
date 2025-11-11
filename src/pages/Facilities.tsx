@@ -1,21 +1,17 @@
 import Section from '../components/Section'
+import texts from '../i18n'
 
 export default function Facilities() {
+  const t = texts.facilities
+
   return (
     <> 
-      <Section title="Facilities" subtitle="Safe and student-friendly infrastructure.">
+      <Section title={t.title} subtitle={t.subtitle}>
         <div className="grid gap-6 md:grid-cols-3">
-          {[
-            'Smart Classrooms',
-            'Library & Labs',
-            'Sports & Play Areas',
-            'Transport',
-            'Activity Rooms',
-            'Infirmary'
-          ].map((f) => (
+          {t.items.map((f) => (
             <div key={f} className="card p-5">
               <div className="font-semibold">{f}</div>
-              <p className="mt-2 text-sm text-slate-600">Designed for engaged learning and wellbeing.</p>
+              <p className="mt-2 text-sm text-slate-600">{t.itemDescription}</p>
             </div>
           ))}
         </div>

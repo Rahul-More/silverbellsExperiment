@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { NAV_LINKS, SITE } from '../site.config'
+import texts from '../i18n'
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
@@ -33,7 +34,7 @@ export default function Navbar() {
               }
               end={link.path === '/'}
             >
-              {link.label}
+              {texts.nav[link.key]}
             </NavLink>
           ))}
         </nav>
@@ -59,7 +60,7 @@ export default function Navbar() {
                 className={({ isActive }) => `px-3 py-2 rounded-lg text-sm ${isActive ? 'bg-slate-100' : 'hover:bg-slate-50'}`}
                 end={link.path === '/'}
               >
-                {link.label}
+                {texts.nav[link.key]}
               </NavLink>
             ))}
           </div>

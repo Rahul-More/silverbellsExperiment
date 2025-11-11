@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom'
-import { NAV_LINKS, SITE } from '../site.config'
+import texts from '../i18n'
+import { SITE } from '../site.config'
 
 export default function Footer() {
+  const f = texts.footer
+
   return (
     <footer className="mt-16 border-t border-slate-200 bg-slate-50">
       <div className="container-page py-12 grid gap-10 md:grid-cols-3">
@@ -16,13 +19,17 @@ export default function Footer() {
         <div>
           <div className="font-semibold mb-3">Explore</div>
           <ul className="grid gap-2 text-sm">
-            {NAV_LINKS.map((l) => (
-              <li key={l.key}>
-                <Link to={l.path} className="text-slate-600 hover:text-slate-900">
-                  {l.label}
-                </Link>
-              </li>
-            ))}
+            {Object.entries(texts.nav).map(([key, label]) => {
+              const link = (NAV_LINKS || []).find((l) => l.key === key) || null
+              const to = link?.path ?? '/'
+              return (
+                <li key={key}>
+                  <Link to={to} className="text-slate-600 hover:text-slate-900">
+                    {label}
+                  </Link>
+                </li>
+              )
+            })}
           </ul>
         </div>
 
@@ -51,7 +58,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-slate-200 text-center text-xs text-slate-500 py-4">
-        © {new Date().getFullYear()} {SITE.name}. All rights reserved.
+        {f?.copyright ?? `© ${new Date().getFullYear()} ${SITE.name}. All rights reserved.`}
       </div>
     </footer>
   )
