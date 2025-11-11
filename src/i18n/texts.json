@@ -1,0 +1,162 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "academics": "Academics",
+    "activities": "Activities",
+    "admissions": "Admissions",
+    "careers": "Careers",
+    "contact": "Contact",
+    "events": "Events",
+    "facilities": "Facilities",
+    "gallery": "Gallery",
+    "news": "News",
+    "login": "Login"
+  },
+  "home": {
+    "sectionWhyTitle": "Why Choose Us",
+    "sectionWhySubtitle": "A compact, modern campus experience focused on excellence in academics, character, and activities.",
+    "sectionWhyCtaLabel": "Explore Academics",
+    "sectionWhyCtaHref": "/academics",
+    "features": [
+      { "title": "Holistic Education", "text": "Balanced focus on academics, co-curriculars, and values." },
+      { "title": "Experienced Faculty", "text": "Dedicated teachers guiding every child’s growth." },
+      { "title": "Modern Infrastructure", "text": "Safe, tech-enabled classrooms and facilities." }
+    ],
+    "highlightsSectionTitle": "Highlights",
+    "highlights": {
+      "admissionsBadge": "Admissions",
+      "admissionsTitle": "Now Open",
+      "admissionsText": "Apply online with a simple, guided process.",
+      "admissionsCtaLabel": "Apply Now",
+      "admissionsCtaHref": "/admissions",
+      "eventsBadge": "Events",
+      "eventsTitle": "Upcoming Activities",
+      "eventsText": "Stay updated with school events and programs.",
+      "eventsCtaLabel": "View Events",
+      "eventsCtaHref": "/events"
+    },
+    "heroAdmissionsButton": "Admissions",
+    "heroLearnMoreButton": "Learn More"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Our mission is to nurture confident and compassionate learners.",
+    "lead": "We provide a student-centered, inclusive environment where every child discovers their potential through academic excellence and meaningful experiences.",
+    "leadership": [
+      { "heading": "Vision", "text": "To inspire lifelong learning and character building." },
+      { "heading": "Mission", "text": "To foster curiosity, creativity, and community spirit." }
+    ]
+  },
+  "academics": {
+    "title": "Academics",
+    "subtitle": "A structured curriculum supported by modern pedagogy and evaluation.",
+    "stages": [
+      { "title": "Primary", "text": "Foundational learning with focus on literacy, numeracy, and exploration." },
+      { "title": "Middle School", "text": "Concept mastery through inquiry, projects, and applied practices." },
+      { "title": "Secondary", "text": "Advanced preparation for board exams and future pathways." }
+    ],
+    "coScholastic": { "title": "Co-Scholastic", "subtitle": "Sports, arts, and clubs for holistic development." }
+  },
+  "activities": {
+    "title": "Activities",
+    "subtitle": "Arts, sports, clubs, and events that enrich learning.",
+    "items": [
+      { "title": "Sports & Fitness", "text": "Team games, athletics, yoga, and more." },
+      { "title": "Visual & Performing Arts", "text": "Music, dance, theatre, and fine arts." },
+      { "title": "Clubs & Societies", "text": "STEM, literature, environment, and community service." },
+      { "title": "Competitions & Fests", "text": "Inter-house and inter-school opportunities." }
+    ]
+  },
+  "admissions": {
+    "title": "Admissions",
+    "subtitle": "We’re excited to welcome new learners.",
+    "steps": [
+      "Submit an online enquiry",
+      "Visit campus and interaction (as applicable)",
+      "Confirm seat and complete documentation"
+    ],
+    "enquireEmailCtaLabel": "Enquire via Email",
+    "enquireEmailHref": "mailto:info@silverbellsschool.org?subject=Admission Enquiry",
+    "documentsRequiredTitle": "Documents Required",
+    "documents": [
+      "Birth certificate",
+      "Previous school reports",
+      "Passport-size photographs",
+      "Address proof"
+    ]
+  },
+  "careers": {
+    "title": "Careers",
+    "subtitle": "Join our talented and caring team.",
+    "jobs": [
+      { "role": "Primary Teacher", "type": "Full-time", "location": "On-site" },
+      { "role": "Science Lab Assistant", "type": "Part-time", "location": "On-site" }
+    ],
+    "applyCtaLabel": "Apply",
+    "applyHref": "mailto:info@silverbellsschool.org?subject=Job Application"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We’re here to help.",
+    "reachUsHeading": "Reach Us",
+    "officeHoursLabel": "Office Hours",
+    "officeHoursValue": "Mon–Fri, 9:00 AM – 4:00 PM",
+    "nameLabel": "Name",
+    "namePlaceholder": "Your name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "you@example.com",
+    "messageLabel": "Message",
+    "messagePlaceholder": "How can we help?",
+    "submitButton": "Send Message",
+    "formNote": "This demo form does not send emails. Replace with your form backend."
+  },
+  "events": {
+    "title": "Events",
+    "subtitle": "What’s happening on campus.",
+    "items": [
+      { "title": "Annual Sports Day", "date": "Nov 30", "desc": "Inter-house competitions and awards." },
+      { "title": "Science Exhibition", "date": "Dec 15", "desc": "Student projects and demos." }
+    ]
+  },
+  "facilities": {
+    "title": "Facilities",
+    "subtitle": "Safe and student-friendly infrastructure.",
+    "items": [
+      "Smart Classrooms",
+      "Library & Labs",
+      "Sports & Play Areas",
+      "Transport",
+      "Activity Rooms",
+      "Infirmary"
+    ],
+    "itemDescription": "Designed for engaged learning and wellbeing."
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "Snapshots from campus life.",
+    "imageAlt": "Campus"
+  },
+  "news": {
+    "title": "News",
+    "subtitle": "Latest announcements and updates.",
+    "items": [
+      { "title": "Exam Schedule Released", "date": "Oct 2025", "desc": "Check the timetable and guidelines." },
+      { "title": "New Club Launched", "date": "Sep 2025", "desc": "Join the Student Innovation Club." }
+    ]
+  },
+  "notFound": {
+    "code": "404",
+    "subtitle": "Page not found",
+    "homeLink": "Go Home"
+  },
+  "footer": {
+    "copyright": "© 2025 Silverbells",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "errors": {
+    "requiredField": "This field is required",
+    "invalidEmail": "Please enter a valid email"
+  }
+}
